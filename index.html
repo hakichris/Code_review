@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Microverse Project- Survey form: Christian-Jesse</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+
+<header class="header">
+  <h1 id="title" class="text-center"> Survey Form</h1>
+  <p id="description" class="description text-center">
+          Thank you for taking time for this<p>
+    </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name"> My Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">My Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="number">My Age</label>
+      <input type="number" name="age" id="number" min="5" max="70" class="form-control" placeholder="Age">
+    </div>
+
+    <div class="form-group">
+      <p>What is your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required="">
+        <option disabled="" selected="" value="">Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Part Time Job</option>
+        <option value="learner">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend bootCamp to your friend?</p>
+      <label>
+        <input name="user-recommend" value="Absolutly" type="radio" class="input-radio" checked="">Absolutely</label>
+      <label><input name="user-recommend" value="Probably" type="radio" class="input-radio">Probably</label>
+      <label><input name="user-recommend" value="Nope" type="radio" class="input-radio">Nope</label>
+    </div>
+
+    <div class="form-group">
+      <p>What is your favorite feature of Bootcamp?</p>
+      <select id="most-like" name="mostLike" class="form-control" required="">
+        <option disabled="" selected="" value="">Select an option</option>
+        <option value="challenges">Competition</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="openSource">coding ressource</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to improve the platform?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+    
+       <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end Projects</label>
+      <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Front end Projects</label>
+      <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges</label>
+      <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Open Source Community</label>
+      <label><input name="prefer" value="gitter-help_rooms" type="checkbox" class="input-checkbox">Gitter help rooms</label>
+      <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Additional Courses</label>
+    </div>
+
+    <div class="form-group">
+      <p>Any comments?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Click here to submit
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
